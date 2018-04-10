@@ -4,12 +4,11 @@ window.addEventListener("scroll", throttleScroll, false);
  
 function throttleScroll(e) {
 	if (isScrolling == false) {
-	window.requestAnimationFrame(function() {
-	  scrolling(e);
-	  isScrolling = false;
-});
+		window.requestAnimationFrame(function() {
+		  scrolling(e);
+		  isScrolling = false;
+		});
 	}
-	  isScrolling = true;
 }
  
 document.addEventListener("DOMContentLoaded", scrolling, false);
@@ -22,8 +21,6 @@ function scrolling(e) {
 		 
 		if (isPartiallyVisible(listItem)) {
 			listItem.classList.add("active");
-		} else {
-			listItem.classList.remove("active");
 		}
 	}
 }
