@@ -1,0 +1,330 @@
+body {
+	font-family: Open Sans, Arial, sans-serif;
+	background: #fff;
+	line-height: 32px;
+	margin: 0;
+	padding: 0
+}
+a {text-decoration: none}
+a:hover {
+	color: #001e4c;
+	transition: color 0.5s ease
+}
+.container {
+	width: 320px;
+	margin: 0 auto
+}
+.tablet-only {display: none}
+.desktop-only {display: none}
+html, body {height: 100%}
+header:hover, .contact:hover {
+	background: #151d29;
+	background-image: url(../images/bg.svg);
+	transition: all 3s ease
+}
+.service .container .row {
+    padding-left: 7px;
+    margin-bottom: 15px;
+    transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+    transform: translate3d(0, 70px, 0);
+    opacity: 0;
+}
+.service .container .row.active {
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+}
+.row {
+	display: flex;
+	justify-content: space-between
+}
+
+
+.header {
+	color: #fff;
+	background: #0c1119;
+	background-image: url(../images/bg.svg);
+	text-align: center;
+	height: 100%;
+	transition: all 3s ease
+}
+.header_logo {
+	margin-top: 35px
+}
+.header_logo img {height: 55px}
+.header_menu {
+	margin-top: 45px;
+	float: right
+}
+.number {font-weight: 700}
+.header_main {
+	margin: 0 auto;
+	padding-bottom: 80px;
+	max-width: 1000px;
+}
+.menu_item, .number {
+	opacity: 0.5;
+}
+.menu_item:hover, .number:hover {
+	color: #fff;
+	opacity: 1;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease
+}
+.heading {
+	font-weight: 200;
+	font-size: 2.2em;
+	line-height: 45px;
+	padding: 10px 0;
+}
+.description {
+	font-size: 1.1em;
+	max-width: 750px;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+.contact_btn {
+	color: #fff;
+	font-weight: 500;
+	border: 2px solid #fff;
+	background: transparent;
+	border-radius: 35px;
+	text-transform: uppercase;
+	padding: 16px 40px;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease
+}
+.contact_btn:hover {
+	color: #fff;
+	border: 2px solid #287ad2;
+	background: #287ad2;
+	padding: 16px 30px;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease
+}
+.arrow_img {
+	vertical-align: middle;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	height: 20px
+}
+
+.service .row {padding: 35px 0}
+.service {margin-top: 120px}
+.service_type {
+	margin-top: 50px;
+	max-width: 600px;
+	margin: 0 auto
+}
+.service_type_name {
+	color: #242424;
+	font-size: 3em
+}
+.service_description {
+	color: #a5a5a5;
+	font-size: 1.25em
+}
+.main-text {color: #424242}
+.service_item {margin: 5px 0 40px 0}
+.service_icon {
+	height: 100px;
+	width: 100px;
+	margin-top: 10px
+}
+.service_name {
+	font-weight: 400;
+	font-size: 1.6em;
+	color: #424242;
+	margin: 0
+}
+
+.contact_main {
+	margin: 50px auto;
+	max-width: 600px
+}
+.contact {
+	background: #151d29;
+	background-image: url(../images/bg.svg);
+	color: #fff;
+	margin-top: 20px;
+	transition: all 3s ease
+}
+.caption {padding-bottom: 40px}
+.caption, .contact .description {margin: 0}
+.contact_method {padding: 10px 0}
+.contact_method p {margin: 0}
+.contact_heading {
+	text-transform: uppercase;
+	font-weight: 500
+}
+.contact_link {
+	color: #fff;
+	font-size: 1.3em;
+	display: table;
+	border-bottom: 1px solid #287ad2;
+	font-weight: 700
+}
+.contact_link:hover {
+	color: #fff;
+	background: #287ad2;
+	transition: background 0.5s ease;
+}
+.atom_img {
+	position: absolute;
+	right: 0
+}
+
+.footer {
+	padding: 15px;
+	color: #4b4b4b
+}
+.copyright {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.9em;
+	margin: 0 auto
+}
+
+@media (min-width: 630px) {
+	.container {width: 550px}
+	.mobile-only {display: none}
+	.tablet-only {display: block}
+	.heading {
+		font-size: 2.7em;
+		line-height: 50px
+	}
+	.description {
+		font-size: 1.3em;
+		line-height: 40px
+	}
+	.header_main {margin-top: 40px}
+	.header_menu * {
+		color: #fff;
+		padding-left: 20px;
+		display: inline-block
+	}
+	.header_main {
+		padding-top: 15px;
+		padding-bottom: 150px
+	}
+	.header_logo {
+		margin: 0;
+		margin-top: 35px
+	}
+	
+	.service_icon {
+		height: 200px;
+		width: 200px;
+		margin-top: 40px
+	}
+	.service_item {
+		padding: 0 5px;
+		margin-top: 40px;
+		max-width: 300px
+	}
+	.service_type {text-align: center}
+}
+
+@media (min-width: 884px) {
+	.container {width: 700px}
+	.desktop-only {display: block}
+	.header .container, .footer .container {width: 800px}
+	.header_menu * {padding-left: 25px}
+	.header_main {margin-top: 80px}
+	.heading {font-size: 3em}
+	.description {
+		font-size: 1.5em;
+		line-height: 40px;
+		font-weight: 300;
+		margin: 25px auto
+	}
+	.service_icon {height: 220px; width: 220px}
+	.service_item {max-width: 420px}
+
+	.contact_method {
+		display: inline-block;
+		text-align: left;
+		padding: 0 50px
+	}
+	.contact_bwtext {
+		position: relative;
+		top: 15px
+	}
+	.contact_main {
+		text-align: center;
+		margin: 75px auto;
+	}
+	.contact_block {margin: 20px 0}
+	.atom_img {display: none}
+
+	.copyright {
+		text-align: left;
+		font-weight: 500;
+		padding-top: 1px;
+		margin: 0
+	}
+	.footer_menu {text-align: center}
+	.footer_menu .menu_item {
+		padding: 0 15px;
+		text-transform: uppercase;
+		font-weight: 500;
+		color: #4b4b4b;
+		font-size: 0.9em
+	}
+	.footer_menu .menu_item:hover {color: #287ad2}
+	.footer_sm {text-align: right}
+	.footer_sm a {
+		vertical-align: middle;
+		padding-left: 15px
+	}
+	.footer_sm a img {height: 20px}
+}
+
+@media (min-width: 1210px) {
+	.container {width: 850px}
+	.header .container, .footer .container {width: 1100px}
+	.header_menu * {padding-left: 35px}
+	.heading {
+		font-size: 3.5em;
+		line-height: 65px;
+	}
+	.description {font-size: 1.7em}
+	.header_main {
+		margin-top: 75px;
+		padding-bottom: 200px
+	}
+
+	.service_icon {height: 220px}
+	.service_item {max-width: 550px}
+
+	.contact {margin-top: 50px}
+}
+
+@media (min-width: 1360px) {
+	.container {width: 892px}
+	.header .container, .footer .container {width: 1256px}
+
+	.service_item {max-width: 600px}
+
+	.contact {margin-top: 100px}
+}
+
+@media (min-width: 1510px) {
+	.container {width: 929px}
+	.header .container, .footer .container {width: 1416px}
+	.header_main {
+		margin-top: 150px;
+		padding-bottom: 320px
+	}
+
+	.service_icon {height: 220px}
+	.service_item {max-width: 650px}
+}
