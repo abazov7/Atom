@@ -5,18 +5,19 @@ body {
 	margin: 0;
 	padding: 0
 }
+html {overflow-x: hidden}
+html, body {height: 100%}
 a {text-decoration: none}
 a:hover {
 	color: #001e4c;
 	transition: color 0.5s ease
 }
 .container {
-	width: 320px;
+	width: 300px;
 	margin: 0 auto
 }
 .tablet-only {display: none}
 .desktop-only {display: none}
-html, body {height: 100%}
 header:hover, .contact:hover {
 	background: #151d29;
 	background-image: url(../images/bg.svg);
@@ -47,7 +48,7 @@ header:hover, .contact:hover {
 	background: #0c1119;
 	background-image: url(../images/bg.svg);
 	text-align: center;
-	height: 100%;
+	min-height: 100%;
 	transition: all 3s ease
 }
 .header_logo {
