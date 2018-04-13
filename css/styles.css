@@ -42,6 +42,7 @@ header, .contact {background: #0c1119}
 	display: flex;
 	justify-content: space-between
 }
+.mobile-hide {display: none}
 
 
 .header {
@@ -59,9 +60,12 @@ header, .contact {background: #0c1119}
 	margin-top: 45px;
 	float: right
 }
-.number {font-weight: 700}
+.number {
+	font-weight: 700;
+	color: #fff
+}
 .header_main {
-	margin: 0 auto;
+	margin: auto;
 	padding-bottom: 80px;
 	max-width: 1000px;
 }
@@ -86,7 +90,7 @@ header, .contact {background: #0c1119}
 	font-size: 1.1em;
 	max-width: 750px;
 	font-weight: 400;
-	padding-bottom: 20px;
+	padding-bottom: 40px
 }
 .contact_btn {
 	color: #fff;
@@ -127,7 +131,7 @@ header, .contact {background: #0c1119}
 }
 .service_type_name {
 	color: #242424;
-	font-size: 3em;
+	font-size: 2.5em;
 	line-height: 45px;
 	margin-top: 0
 }
@@ -149,7 +153,29 @@ header, .contact {background: #0c1119}
 	margin: 0
 }
 
-.contact_main {
+.projects {padding: 50px 0}
+.project_name, .project_services {
+	padding: 0;
+	margin: 0;
+}
+.project {margin-bottom: 50px}
+.project_img {
+	width: 100%;
+	overflow: hidden;
+	margin: 20px 0;
+	height: 285px
+}
+.project_img img {margin: -50px 0px 0px -250px}
+.project_name {
+	font-size: 1.7em;
+	color: #242424;
+	font-weight: 700
+}
+.project_services, .project_goto {color: #9f9f9f; font-weight: 500}
+.project_goto {font-size: 1.2em}
+.projects .arrow_img {padding: 0 0 0 15px; height: 15px}
+
+.text-content_block {
 	margin: 50px auto;
 	max-width: 600px
 }
@@ -159,8 +185,11 @@ header, .contact {background: #0c1119}
 	margin-top: 20px;
 	transition: all 3s ease
 }
-.caption {padding-bottom: 40px}
-.caption, .contact .description {margin: 0}
+.caption {
+	padding-bottom: 40px;
+	font-size: 2.5em
+}
+.caption, .contact .description, .projects .description {margin: 0}
 .contact_method {padding: 10px 0}
 .contact_method p {margin: 0}
 .contact_heading {
@@ -209,10 +238,10 @@ header, .contact {background: #0c1119}
 	}
 	.header_main {margin-top: 40px}
 	.header_menu * {
-		color: #fff;
 		padding-left: 20px;
 		display: inline-block
 	}
+	.header_menu .menu_item {color: #fff}
 	.header_main {
 		padding-top: 15px;
 		padding-bottom: 150px
@@ -233,12 +262,16 @@ header, .contact {background: #0c1119}
 		max-width: 300px
 	}
 	.service_type {text-align: center}
+
+	.projects .text-content_block {text-align: center}
 }
 
 @media (min-width: 884px) {
 	.container {width: 700px}
+	.desktop-hide {display: none}
+	.mobile-hide {display: flex}
 	.desktop-only {display: block}
-	.header .container, .footer .container {width: 800px}
+	.header .container, .footer .container, .projects .container {width: 800px}
 	.header_menu * {padding-left: 25px}
 	.header_main {margin-top: 80px}
 	.heading {font-size: 3em}
@@ -251,6 +284,17 @@ header, .contact {background: #0c1119}
 	.service_icon {height: 220px; width: 220px}
 	.service_item {max-width: 420px}
 
+	.project_img {margin: 0}
+	.project_info {
+		margin: auto 0;
+		width: 35%;
+		width: 500px
+	}
+	.project_services {
+		margin-bottom: 50px;
+	}
+	.project_img {height: 325px}
+
 	.contact_method {
 		display: inline-block;
 		text-align: left;
@@ -260,9 +304,9 @@ header, .contact {background: #0c1119}
 		position: relative;
 		top: 15px
 	}
-	.contact_main {
+	.text-content_block {
 		text-align: center;
-		margin: 75px auto;
+		margin: 75px auto
 	}
 	.contact_block {margin: 20px 0}
 	.atom_img {display: none}
@@ -292,17 +336,21 @@ header, .contact {background: #0c1119}
 
 @media (min-width: 1210px) {
 	.container {width: 850px}
-	.header .container, .footer .container {width: 1100px}
+	.header .container, .footer .container, .projects .container {width: 1100px}
 	.header_menu * {padding-left: 35px}
 	.heading {
 		font-size: 3.5em;
 		line-height: 65px;
 	}
-	.description {font-size: 1.7em}
+	.description {font-size: 1.5em}
 	.header_main {
 		margin-top: 75px;
 		padding-bottom: 200px
 	}
+
+	.project_name {font-size: 2em}
+	.project_info {width: 550px}
+	.project_img {height: 350px}
 
 	.service_icon {height: 220px}
 	.service_item {max-width: 550px}
@@ -312,20 +360,25 @@ header, .contact {background: #0c1119}
 
 @media (min-width: 1360px) {
 	.container {width: 892px}
-	.header .container, .footer .container {width: 1256px}
+	.header .container, .footer .container, .projects .container {width: 1256px}
 
 	.service_item {max-width: 600px}
+
+	.project_info {width: 650px}
 
 	.contact {margin-top: 100px}
 }
 
 @media (min-width: 1510px) {
 	.container {width: 929px}
-	.header .container, .footer .container {width: 1416px}
+	.header .container, .footer .container, .projects .container {width: 1416px}
 	.header_main {
 		margin-top: 150px;
 		padding-bottom: 320px
 	}
+
+	.project_info {width: 700px}
+	.project_img {height: 375px}
 
 	.service_icon {height: 220px}
 	.service_item {max-width: 650px}
